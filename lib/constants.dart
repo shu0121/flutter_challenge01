@@ -4,3 +4,4 @@ import 'package:flutter/material.dart';
 const Color primaryColor = Color(0xffaaaaaa);
 
 const TextStyle titleStyle = TextStyle(color: Colors.black, fontSize: 22, fontWeight: FontWeight.bold,);
+const TextStyle bodyStyle = TextStyle(color: Colors.black, fontSize: 12, );

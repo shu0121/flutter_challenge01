@@ -98,61 +98,88 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),
+            Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: const Icon(Icons.wifi, size: 30, color: primaryColor,),
+                      ),
+                      const Text('Wifi', style: bodyStyle,),
+                    ],
+                  ),
+                  SizedBox(width: 30,),
+                  Column(
+                    children: [
+                      Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child : const Icon(Icons.flatware, size: 30, color: primaryColor,),
+                      ),
+                      const Text('キッチン', style: bodyStyle,),
+                    ],
+                  ),
+                  SizedBox(width: 30,),
+                  Column(
+                    children: [
+                      Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child : const Icon(Icons.beach_access, size: 30, color: primaryColor,),
+                      ),
+                      const Text('ビーチ', style: bodyStyle,),
+                    ],
+                  ),
+                  SizedBox(width: 30,),
+                  Column(
+                    children: [
+                      Container(
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey,
+                            width: 1,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child : const Icon(Icons.more_horiz, size: 30, color: primaryColor,),
+                      ),
+                      const Text('その他', style: bodyStyle,),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
-          // children: ClipRRect(
-          //   borderRadius: BorderRadius.circular(30),
-          //   child: Image.asset('images/pracePic/IMG_2237.JPG'),
-          // ),
         ),
       ),
     );
   }
 }
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         actions: [
-//           IconButton(onPressed: (){}, icon: Icon(Icons.navigate_before_outlined), color: Colors.white,),
-//           IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border), color: Colors.white,)
-//
-//         ],
-//       ),
-//       body: Container(
-//         decoration: BoxDecoration(
-//           image: DecorationImage(
-//             image: AssetImage('images/pracePic/IMG_2237.JPG'),
-//           ),
-//           border: Border.all(color: Colors.white, width: 3,),
-//           borderRadius: BorderRadius.circular(50),
-//         ),
-//         child: Column(
-//           children: [
-//                 Text('Bali', style: titleStyle,),
-//                 Container(
-//                   child: Row(
-//                     children: [
-//                       Icon(Icons.place, color: primaryColor,),
-//                       Text('Indonesia', style: titleStyle,),
-//                     ],
-//                   ),
-//                 ),
-//             Container(
-//               child: Row(
-//                 children: [
-//                   Icon(Icons.star, color: primaryColor,),
-//                   Icon(Icons.star, color: primaryColor,),
-//                   Icon(Icons.star, color: primaryColor,),
-//                   Icon(Icons.star, color: primaryColor,),
-//                   Icon(Icons.star_border, color: primaryColor,),
-//                   Text('4.0', style: titleStyle,),
-//                 ],
-//               ),
-//             ),
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
